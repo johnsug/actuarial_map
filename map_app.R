@@ -12,7 +12,7 @@ ui <- bootstrapPage(
 server <- function(input, output){
   
   ## get data
-  d <- read.csv("C:/Users/JS033085/Desktop/EQ/MO.csv")
+  d <- read.csv("MO.csv", stringsAsFactors=F)
   
   ## shape
   names(d)[1] <- "Practice"
